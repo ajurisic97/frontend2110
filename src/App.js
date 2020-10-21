@@ -11,8 +11,9 @@ const App = (props) => {
   const [unosPoruke, postaviUnos] = useState("...unesi poruku")
   const [ispisiSve, postaviIspis] = useState(true)
 
+
   useEffect(() => {
-    console.log("Effect hook");
+    console.log("Effect HOOK");
     porukeServer
       .dohvatiSve()
       .then(pocPoruke => {
